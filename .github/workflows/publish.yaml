@@ -18,4 +18,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ vars.AWS_REGION }}
       - name: Publish to pub.dev
-        run: dart pub publish
+        run: dart pub publish --force
