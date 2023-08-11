@@ -10,9 +10,9 @@ jobs:
       - uses: dart-lang/setup-dart@v1
       - run: dart pub get
       - name: Compile dart to JS
-        run: dart compile js src/to_js.dart -o apiClient.js
+        run: dart compile js src/to_js.dart -o build/apiClient.js
       - name: Publish to S3
-        run: aws s3 cp ./apiClient* s3://very.supply
+        run: aws s3 sync ./build s3://very.supply
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
