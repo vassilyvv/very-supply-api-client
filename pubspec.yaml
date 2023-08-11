@@ -1,7 +1,7 @@
 name: very_supply_api_client
 repository: https://github.com/vassilyvv/very-supply-api-client
 description: The library contains all the necessary methods to interact with very.supply API.
-version: 0.0.4
+version: 0.0.5
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
