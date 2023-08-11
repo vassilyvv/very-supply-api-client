@@ -4,7 +4,7 @@ import 'dart:html';
 import 'dart:convert';
 import 'dart:js_util';
 
-import 'api_client.dart';
+import 'api/client.dart';
 
 @JS('Promise')
 class Promise<T> {
