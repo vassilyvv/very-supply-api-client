@@ -1,3 +1,9 @@
+# 0.0.7
+1. moved methods from old client
+
+# 0.0.6
+1. moved methods from old client
+
 # 0.0.5
 1. git tag for pub.dev
 
