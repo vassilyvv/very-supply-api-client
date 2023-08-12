@@ -1,3 +1,6 @@
+# 0.0.8
+1. src/ -> lib/
+
 # 0.0.7
 1. moved methods from old client
 
