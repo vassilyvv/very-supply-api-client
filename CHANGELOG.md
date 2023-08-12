@@ -1,3 +1,6 @@
+# 0.0.10
+1. Downgraded `collection` dependency
+
 # 0.0.9
 1. added `collection` dependency
 
