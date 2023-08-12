@@ -1,3 +1,6 @@
+# 0.0.9
+1. added `collection` dependency
+
 # 0.0.8
 1. src/ -> lib/
 
