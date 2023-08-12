@@ -10,7 +10,7 @@ jobs:
       - uses: dart-lang/setup-dart@v1
       - run: dart pub get
       - name: Compile dart to JS
-        run: dart compile js src/to_js.dart -o build/apiClient.js
+        run: dart compile js lib/to_js.dart -o build/apiClient.js
       - name: Publish to S3
         run: aws s3 sync ./build s3://very.supply
         env:

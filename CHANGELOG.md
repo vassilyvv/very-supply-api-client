@@ -1,3 +1,6 @@
+# 0.0.11
+1. changed path to sources for ci/cd
+ 
 # 0.0.10
 1. Downgraded `collection` dependency
 
