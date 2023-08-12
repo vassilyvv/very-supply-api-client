@@ -1,3 +1,6 @@
+# 0.0.12
+1. removed redudant declaration of LoginResponse
+
 # 0.0.11
 1. changed path to sources for ci/cd
  

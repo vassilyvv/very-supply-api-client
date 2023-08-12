@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:dio/dio.dart';
 
 import 'responses.dart';
@@ -9,37 +7,6 @@ final Dio _dio = Dio();
 const apiBaseUrl =
     String.fromEnvironment('apiBaseUrl', defaultValue: 'http://localhost:8000');
 
-class GenericResponse {
-  late int statusCode;
-  String? validationError;
-
-  GenericResponse(this.statusCode, [this.validationError]);
-
-  GenericResponse.fromResponse(Response response) {
-    statusCode = response.statusCode!;
-  }
-}
-
-class LoginResponse extends GenericResponse {
-  String? accessToken;
-  String? refreshToken;
-
-  LoginResponse(statusCode, this.accessToken, this.refreshToken)
-      : super(statusCode);
-
-  LoginResponse.fromResponse(Response response) : super.fromResponse(response) {
-    accessToken = response.data['access'];
-    refreshToken = response.data['refresh'];
-  }
-
-  String toJson() {
-    return jsonEncode({
-      'response_status': this.statusCode,
-      'access_token': this.accessToken,
-      'refresh_token': this.refreshToken
-    });
-  }
-}
 
 Map<String, Function> apiMethods = {
   'refreshAccessToken': (Map<String, dynamic> args) async {
