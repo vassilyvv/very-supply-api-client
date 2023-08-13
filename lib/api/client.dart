@@ -106,7 +106,7 @@ Map<String, Function> apiMethods = {
               headers: {'Authorization': 'Bearer ${args['accessToken']}'},
             )));
   },
-  'removeFavoritesEntry': (Map<String, dynamic> args) async {
+  'removeMenuSectionEntryFromMenuSectionEntriesList': (Map<String, dynamic> args) async {
     return RemoveMenuSectionEntryFromFavoritesResponse.fromResponse(
         await _dio.delete(
             "$apiBaseUrl/catalogue/menusectionentrieslistentry/${args['menuSectionEntriesListEntryId']}/",

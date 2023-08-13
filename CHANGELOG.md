@@ -1,3 +1,6 @@
+# 0.0.15
+1. renamed remove from favorites method
+
 # 0.0.14
 1. renamed add to favorites method
 
