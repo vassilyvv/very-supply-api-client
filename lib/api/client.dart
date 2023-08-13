@@ -99,8 +99,7 @@ Map<String, Function> apiMethods = {
         await _dio.post("$apiBaseUrl/catalogue/menusectionentrieslistentry/",
             data: {
               "menu_section_entry_id": args['menuSectionEntryId'],
-              "menu_section_entries_list":
-                  "00000000-0000-0000-0000-000000000001"
+              "menu_section_entries_list": args['menuSectionEntriesListId']
             },
             options: Options(
               validateStatus: (status) => status! < 500,

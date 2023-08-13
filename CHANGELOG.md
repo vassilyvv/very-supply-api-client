@@ -1,4 +1,7 @@
 # 0.0.12
+1. dehardcoded favorites list id
+
+# 0.0.12
 1. removed redudant declaration of LoginResponse
 
 # 0.0.11
