@@ -94,7 +94,7 @@ Map<String, Function> apiMethods = {
           headers: {'Authorization': 'Bearer ${args['accessToken']}'}),
     ));
   },
-  'addMenuSectionEntryToFavorites': (Map<String, dynamic> args) async {
+  'addMenuSectionEntryToMenuSectionEntriesList': (Map<String, dynamic> args) async {
     return AddMenuSectionEntryToFavoritesResponse.fromResponse(
         await _dio.post("$apiBaseUrl/catalogue/menusectionentrieslistentry/",
             data: {

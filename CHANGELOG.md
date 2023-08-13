@@ -1,4 +1,7 @@
-# 0.0.12
+# 0.0.14
+1. renamed add to favorites method
+
+# 0.0.13
 1. dehardcoded favorites list id
 
 # 0.0.12
