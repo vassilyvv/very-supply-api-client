@@ -14,8 +14,8 @@ class Promise<T> {
 
 Promise performRequest(String functionName, String jsonArgs) {
   return Promise(js.allowInterop((resolve, reject) {
-    apiMethods[functionName]!(jsonDecode(jsonArgs)).then((value) {
-      final jsonString = jsonEncode(value);
+    apiMethods[functionName]!(jsonDecode(jsonArgs)).then((response) {
+      final jsonString = jsonEncode(response.toJson());
       resolve(jsonString);
     }).catchError((error) {
       reject(error);

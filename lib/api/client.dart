@@ -5,7 +5,7 @@ import 'responses.dart';
 final Dio _dio = Dio();
 
 const apiBaseUrl =
-    String.fromEnvironment('apiBaseUrl', defaultValue: 'http://localhost:8000');
+    String.fromEnvironment('apiBaseUrl', defaultValue: 'https://api.very.supply');
 
 
 Map<String, Function> apiMethods = {

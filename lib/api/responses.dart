@@ -46,6 +46,9 @@ class LoginResponse extends GenericResponse {
     accessToken = response.data['access'];
     refreshToken = response.data['refresh'];
   }
+  Map<String, dynamic> toJson() {
+    return {'statusCode': this.statusCode, 'accessToken': this.accessToken, 'refreshToken': this.refreshToken};
+  }
 }
 
 class RegisterResponse extends GenericResponse {
